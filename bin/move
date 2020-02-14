@@ -6,6 +6,6 @@ require_relative '../lib/move.rb'
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " ", ]
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
-input = gets.chomp
+input = gets.strip
 index = input_to_index(user_input)
 move(board, index, default_player="X")
